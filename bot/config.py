@@ -11,10 +11,6 @@ class Config:
 
     API_HASH = os.environ.get("API_HASH")
 
-    CLIENT_ID = os.environ.get("CLIENT_ID")
-
-    CLIENT_SECRET = os.environ.get("CLIENT_SECRET")
-
     BOT_OWNER = int(os.environ.get("BOT_OWNER"))
 
     AUTH_USERS_TEXT = os.environ.get("AUTH_USERS", "")
@@ -45,5 +41,3 @@ class Config:
             UPLOAD_MODE = UPLOAD_MODE.lower()
         else:
             UPLOAD_MODE = False
-
-    CRED_FILE = "auth_token.txt"
